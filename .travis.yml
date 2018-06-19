@@ -9,13 +9,10 @@ addons:
   apt:
     update: true
     sources:
-      - sourceline: "deb https://packages.chef.io/repos/apt/stable xenial main"
-        key_url: "https://packages.chef.io/chef.asc"
-      - sourceline: "deb https://packages.chef.io/repos/apt/current xenial main"
-        key_url: "https://packages.chef.io/chef.asc"
+      - sourceline: "ppa:jonathonf/gtk3.18"
     packages:
       - libcairo2-dev
-      - libgirepository1.0-dev
+      - libgirepository1.0-dev=1.46.0-3ubuntu1
 
 # Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 install: pip install -U tox-travis
