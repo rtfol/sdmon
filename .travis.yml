@@ -7,10 +7,12 @@ python:
 
 addons:
   apt:
+    update: true
     sources:
       - sourceline: "deb https://packages.chef.io/repos/apt/stable xenial main"
+        key_url: "https://packages.chef.io/chef.asc"
       - sourceline: "deb https://packages.chef.io/repos/apt/current xenial main"
-      key_url: "https://packages.chef.io/chef.asc"
+        key_url: "https://packages.chef.io/chef.asc"
     packages:
       - libcairo2-dev
       - libgirepository1.0-dev
