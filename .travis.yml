@@ -11,8 +11,8 @@ addons:
     sources:
       - sourceline: "ppa:jonathonf/gtk3.18"
     packages:
-      - libcairo2-dev
-      - libgirepository1.0-dev=1.46.0-3ubuntu1
+      - libcairo2-dev=1.14.6-1~ubuntu14.04.1york0
+      - libgirepository1.0-dev=1.46.0-3ubuntu1~ubuntu14.04.1york0
 
 # Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 install: pip install -U tox-travis
